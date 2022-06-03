@@ -35,6 +35,8 @@ Just add a function, set payload and topic and direct everything to your mqtt no
 
 ![nodered integration](https://github.com/schneebonus/MQTT-Python-Remote/blob/main/nodered_integration.png?raw=true)
 
+![nodered_alexa integration](https://github.com/schneebonus/MQTT-Python-Remote/blob/main/nodered_alexa_integration.png?raw=true)
+
 ### Credits
 
 - https://smarthome-blogger.de/blog/tutorial/python-mqtt-tutorial/#mqtt-library for the great tutorial on python mqtt
