@@ -18,8 +18,8 @@ actions = {
     # (device, state) : command
 
     # hardware
-    ("monitor", "on") : "xrandr lorem ipsum",
-    ("monitor", "off") : "xrandr lorem ipsum",
+    ("monitor", "on") : "export DISPLAY=:0.0; xrandr --output eDP-1 --mode 1366x768 --pos 3600x312 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-2-1 --off --output DP-2-2 --mode 1680x1050 --pos 0x0 --rotate normal --output DP-2-3 --primary --mode 1920x1080 --pos 1680x0 --rotate normal",
+    ("monitor", "off") : "export DISPLAY=:0.0; xrandr --output eDP-1 --off --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-2-1 --off --output DP-2-2 --mode 1680x1050 --pos 0x0 --rotate normal --output DP-2-3 --primary --mode 1920x1080 --pos 1680x0 --rotate normal",
     ("laptop", "off") : "shutdown -t now",
     }
 
