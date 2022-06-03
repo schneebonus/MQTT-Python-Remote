@@ -4,7 +4,12 @@ After=multi-user.target
 
 [Service]
 Type=simple
+User=#ToDo
+Group=#ToDo
+StandardOutput=syslog
+StandardError=syslog
 Restart=always
+RestartSec=3
 ExecStart=/usr/bin/python3 /opt/mqtt_agent/mqtt_agent.py
 
 [Install]
