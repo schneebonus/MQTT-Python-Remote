@@ -6,7 +6,8 @@ Service to remote control linux devices over MQTT.
 - `pip install paho-mqtt`
 - Copy `mqtt_agent.py` to `/opt/mqtt_agent/mqtt_agent.py`
 - Copy `mqtt_agent.service` to `/etc/systemd/system/mqtt_agent.service`
-- Set your user and group in `mqtt_agent.service`
+- Set your `User` and `Group` in `mqtt_agent.service`
+- `sudo systemctl daemon-reload`
 - `sudo systemctl enable mqtt_agent`
 - `sudo systemctl start mqtt_agent`
 
@@ -41,3 +42,4 @@ Just add a function, set payload and topic and direct everything to your mqtt no
 
 - https://smarthome-blogger.de/blog/tutorial/python-mqtt-tutorial/#mqtt-library for the great tutorial on python mqtt
 - https://pypi.org/project/paho-mqtt/#client
+- https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
