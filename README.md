@@ -1,5 +1,5 @@
 # MQTT-Python-Remote
-MQTT service to remote control my linux devices.
+Service to remote control linux devices over MQTT.
 
 ### Install
 
