@@ -28,6 +28,14 @@ actions = {
     ("monitor", "on") : "xrandr lorem ipsum",
     ("monitor", "off") : "xrandr lorem ipsum",
     ("laptop", "off") : "shutdown -t now",
+    
+    # keys
+    ("media", "pause") : "xdotool key XF86AudioPlay",
+    ("media", "next") : "xdotool key XF86AudioNext",
+    ("media", "last") : "xdotool key XF86AudioPrev",
+    ("media", "mute") : "xdotool key XF86AudioMute",
+    ("media", "lower") : "xdotool key XF86AudioLowerVolume",
+    ("media", "raise") : "xdotool key XF86AudioRaiseVolume",
 }
 ```
 
