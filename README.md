@@ -40,6 +40,5 @@ Just add a function, set payload and topic and direct everything to your mqtt no
 
 ### Credits
 
-- https://smarthome-blogger.de/blog/tutorial/python-mqtt-tutorial/#mqtt-library for the great tutorial on python mqtt
-- https://pypi.org/project/paho-mqtt/#client
+- https://smarthome-blogger.de/blog/tutorial/python-mqtt-tutorial/#mqtt-library
 - https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units
