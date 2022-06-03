@@ -11,6 +11,9 @@ PORT = 1883               # ToDo
 USER = ""                 # ToDo
 PASSWORD = ""             # ToDo
 
+LAST_WILL = "off"
+QOS = 1
+
 actions = {
     # (device, state) : command
 
@@ -18,7 +21,7 @@ actions = {
     ("monitor", "on") : "xrandr lorem ipsum",
     ("monitor", "off") : "xrandr lorem ipsum",
     ("laptop", "off") : "shutdown -t now",
-}
+    }
 
 def on_message(client, userdata, message):
     # parse incoming message
@@ -32,14 +35,19 @@ def on_message(client, userdata, message):
 
 def on_connect(client, userdata, flags, rc):
     print("Connected to MQTT Broker: " + BROKER_ADDRESS)
-    client.subscribe(TOPIC)
+    client.subscribe(TOPIC + "/#")
 
 if __name__ == "__main__":
     client = mqtt.Client(client_id=CLIENT_ID)
     client.username_pw_set(USER, PASSWORD)
+
     client.on_connect = on_connect
     client.on_message = on_message
 
+    client.will_set(TOPIC, LAST_WILL, qos=QOS, retain=False)
+
     client.connect(BROKER_ADDRESS, PORT)
+
+    client.publish(TOPIC, "on", qos=QOS)
 
     client.loop_forever()
