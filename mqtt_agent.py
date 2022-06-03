@@ -16,6 +16,9 @@ QOS = 1
 
 actions = {
     # (device, state) : command
+    # mqtt should look like:
+    # msg.topic     = TOPIC/device
+    # msg.payload   = state
 
     # hardware
     ("monitor", "on") : "export DISPLAY=:0.0; xrandr --output eDP-1 --mode 1366x768 --pos 3600x312 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-2 --off --output HDMI-2 --off --output DP-2-1 --off --output DP-2-2 --mode 1680x1050 --pos 0x0 --rotate normal --output DP-2-3 --primary --mode 1920x1080 --pos 1680x0 --rotate normal",
