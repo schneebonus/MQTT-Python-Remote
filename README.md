@@ -26,3 +26,9 @@ actions = {
     ("laptop", "off") : "shutdown -t now",
 }
 ```
+
+### Node-RED integration
+
+Just add a function, set payload and topic and direct everything to your mqtt node:
+
+![nodered integration](https://github.com/schneebonus/MQTT-Python-Remote/blob/main/nodered_integration.png?raw=true)
