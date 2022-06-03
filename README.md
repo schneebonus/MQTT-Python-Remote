@@ -10,6 +10,7 @@ Service to remote control linux devices over MQTT.
 - `sudo systemctl daemon-reload`
 - `sudo systemctl enable mqtt_agent`
 - `sudo systemctl start mqtt_agent`
+- Optional: for media keys install `xdotool`
 
 ### Change MQTT commands
 
