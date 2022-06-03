@@ -5,7 +5,7 @@ import paho.mqtt.client as mqtt
 import os
 
 CLIENT_ID = "x240"        # ToDo
-TOPIC = "laptop/x240/+"   # ToDo
+TOPIC = "laptop/x240"     # ToDo
 BROKER_ADDRESS = ""       # ToDo
 PORT = 1883               # ToDo
 USER = ""                 # ToDo
