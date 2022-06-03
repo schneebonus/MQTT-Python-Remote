@@ -27,7 +27,7 @@ actions = {
     # hardware
     ("monitor", "on") : "xrandr lorem ipsum",
     ("monitor", "off") : "xrandr lorem ipsum",
-    ("laptop", "off") : "shutdown -t now",
+    ("laptop", "off") : "shutdown now",
     
     # keys
     ("media", "pause") : "xdotool key XF86AudioPlay",
