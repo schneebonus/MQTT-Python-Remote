@@ -1,0 +1,11 @@
+[Unit]
+Description=MQTT remote agent
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /opt/mqtt_agent/mqtt_agent.py
+
+[Install]
+WantedBy=multi-user.target
