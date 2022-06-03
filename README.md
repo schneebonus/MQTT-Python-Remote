@@ -3,7 +3,7 @@ MQTT service to remote control my linux devices.
 
 ### Install
 
-- `pip install paho-mqtt`
+- `sudo pip install paho-mqtt`
 - copy `mqtt_agent.py` to `/opt/mqtt_agent/mqtt_agent.py`
 - `sudo chmod +x /opt/mqtt_agent/mqtt_agent.py`
 - Copy `mqtt_agent.service` to `/etc/systemd/system/mqtt_agent.service`
